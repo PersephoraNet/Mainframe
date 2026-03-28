@@ -2,13 +2,13 @@ import hashlib
 import sys
 import os
 
-# Secret key SHA-512 hash (from key_hash.py)
+# Secret key SHA-512 hash
 KEY_HASH = (
     "61027e050186ecfca69db93c7301fed2a37995e1e9d2ace74c54a4d4b8b8806b"
     "818662c0c3490ca17879a0e5dfbe18d1ceb285bbaca83176216c10fcd3981e44"
 )
 
-# Session word pool — randomizer source
+# Session word pool
 WORDLIST = [
     "daemon", "libra", "epsylon", "zeta", "obvious", "target",
     "game", "live", "powder", "corn", "visual", "instance",
@@ -16,33 +16,44 @@ WORDLIST = [
 ]
 
 
-def derive_session_words(session_id: str, count: int = 5) -> list:
+def derive_session_words(session_id: str, count: int = 7) -> list:
     """
-    Derive a deterministic but unique set of words for this session
-    by hashing the session_id against the key hash.
+    Derive 7 unique words for this session by hashing session_id + KEY_HASH.
+    Ensures no duplicates by walking the hash stream.
     """
     seed = hashlib.sha512(f"{session_id}:{KEY_HASH}".encode()).hexdigest()
     selected = []
-    for i in range(0, count * 2, 2):
+    seen = set()
+    i = 0
+    while len(selected) < count and i < len(seed) - 1:
         index = int(seed[i:i + 2], 16) % len(WORDLIST)
-        selected.append(WORDLIST[index])
+        word = WORDLIST[index]
+        if word not in seen:
+            seen.add(word)
+            selected.append(word)
+        i += 2
+    # fallback: fill remaining from wordlist in order if needed
+    for word in WORDLIST:
+        if len(selected) >= count:
+            break
+        if word not in seen:
+            selected.append(word)
+            seen.add(word)
     return selected
 
 
 def flip_coin(session_id: str) -> dict:
     """
-    Perform a coin flip for a given session.
-    Result is derived from:
-      SHA-512( session_words + KEY_HASH )
+    Flip a coin for this session.
+    Result is derived from SHA-512( word_chain : KEY_HASH ).
     """
     session_words = derive_session_words(session_id)
     word_chain = "-".join(session_words)
 
-    flip_input = f"{word_chain}:{KEY_HASH}"
-    flip_hash = hashlib.sha512(flip_input.encode()).hexdigest()
+    flip_hash = hashlib.sha512(f"{word_chain}:{KEY_HASH}".encode()).hexdigest()
 
     # Determine result from parity of last hex digit
-    result = "HEADS" if int(flip_hash[-1], 16) % 2 == 0 else "TAILS"
+    result = "FACE" if int(flip_hash[-1], 16) % 2 == 0 else "TAIL"
 
     return {
         "session_id": session_id,
@@ -74,12 +85,14 @@ def main():
     print(f"  RESULT       : >>> {data['result']} <<<")
     print(divider)
 
-    # Export result for GitHub Actions downstream steps
-    if "GITHUB_OUTPUT" in os.environ:
-        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+    # Write outputs for GitHub Actions
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as f:
             f.write(f"result={data['result']}\n")
             f.write(f"word_chain={data['word_chain']}\n")
             f.write(f"flip_hash={data['flip_hash']}\n")
+            f.write(f"session_words={' · '.join(data['session_words'])}\n")
 
 
 if __name__ == "__main__":
