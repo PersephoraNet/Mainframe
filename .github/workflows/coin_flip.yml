@@ -23,7 +23,6 @@ jobs:
           python-version: "3.12"
 
       - name: Resolve Session ID
-        id: session
         run: |
           if [ -n "${{ github.event.inputs.session_id }}" ]; then
             echo "SESSION_ID=${{ github.event.inputs.session_id }}" >> $GITHUB_ENV
@@ -33,17 +32,28 @@ jobs:
 
       - name: Flip the Coin
         id: coin
-        env:
-          SESSION_ID: ${{ env.SESSION_ID }}
-        run: python coin_flip.py
+        run: SESSION_ID=${{ env.SESSION_ID }} python coin_flip.py
 
-      - name: Summary
+      - name: Show Result
         run: |
-          echo "## 🪙 Coin Flip Result" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Field        | Value |" >> $GITHUB_STEP_SUMMARY
-          echo "|--------------|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Session ID   | \`${{ env.SESSION_ID }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "| Result       | **${{ steps.coin.outputs.result }}** |" >> $GITHUB_STEP_SUMMARY
-          echo "| Word Chain   | \`${{ steps.coin.outputs.word_chain }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "| Flip Hash    | \`${{ steps.coin.outputs.flip_hash }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo ""
+          echo "┌─────────────────────────────────────────────────┐"
+          echo "│              🪙  COIN FLIP RESULT                │"
+          echo "├─────────────────────────────────────────────────┤"
+          echo "│  Session  : ${{ env.SESSION_ID }}"
+          echo "│  Words    : ${{ steps.coin.outputs.session_words }}"
+          echo "│  Result   : >>> ${{ steps.coin.outputs.result }} <<<"
+          echo "└─────────────────────────────────────────────────┘"
+
+      - name: Write Job Summary
+        run: |
+          cat >> $GITHUB_STEP_SUMMARY << 'SUMMARY'
+          ## 🪙 Coin Flip Result
+          SUMMARY
+
+          echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Session ID | \`${{ env.SESSION_ID }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Session Words | \`${{ steps.coin.outputs.session_words }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Result** | **${{ steps.coin.outputs.result }}** |" >> $GITHUB_STEP_SUMMARY
+          echo "| Flip Hash | \`${{ steps.coin.outputs.flip_hash }}\` |" >> $GITHUB_STEP_SUMMARY
