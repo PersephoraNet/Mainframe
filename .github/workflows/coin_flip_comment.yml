@@ -1,0 +1,88 @@
+name: 🪙 Coin Flip on /flip comment
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  flip:
+    name: Flip on /flip command
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == '/flip' || startsWith(github.event.comment.body, '/flip ') }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve Session ID
+        run: |
+          CUSTOM=$(echo "${{ github.event.comment.body }}" | sed 's|^/flip *||')
+          if [ -n "$CUSTOM" ]; then
+            echo "SESSION_ID=$CUSTOM" >> $GITHUB_ENV
+          else
+            echo "SESSION_ID=issue-${{ github.event.issue.number }}-comment-${{ github.event.comment.id }}" >> $GITHUB_ENV
+          fi
+
+      - name: Flip the Coin
+        id: coin
+        run: SESSION_ID=${{ env.SESSION_ID }} python coin_flip.py
+
+      - name: Commit history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add flip_history.json
+          git diff --staged --quiet || git commit -m "chore: record flip result [skip ci]"
+          git push
+
+      - name: Post result as comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = "${{ steps.coin.outputs.result }}";
+            const words  = "${{ steps.coin.outputs.session_words }}";
+            const hash   = "${{ steps.coin.outputs.flip_hash }}";
+            const face   = "${{ steps.coin.outputs.face_count }}";
+            const tail   = "${{ steps.coin.outputs.tail_count }}";
+            const total  = "${{ steps.coin.outputs.total_flips }}";
+            const session = "${{ env.SESSION_ID }}";
+
+            const emoji = result === "FACE" ? "🪙 FACE" : "🌀 TAIL";
+
+            const body = [
+              `## ${emoji}`,
+              ``,
+              `| Field | Value |`,
+              `|-------|-------|`,
+              `| Session | \`${session}\` |`,
+              `| Words | \`${words}\` |`,
+              `| **Result** | **${result}** |`,
+              `| All-time | FACE ${face} · TAIL ${tail} (total ${total}) |`,
+              `| Flip Hash | \`${hash.slice(0, 32)}...\` |`,
+              ``,
+              `<details><summary>Verify this result</summary>`,
+              ``,
+              `\`\`\``,
+              `python3 -c "import hashlib; print(hashlib.sha512('${words.replace(/ · /g, '-')}:KEY_HASH'.encode()).hexdigest())"`,
+              `\`\`\``,
+              `Last hex digit even = FACE, odd = TAIL`,
+              `</details>`,
+            ].join("\n");
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body,
+            });
