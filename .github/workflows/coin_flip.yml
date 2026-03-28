@@ -1,12 +1,17 @@
 name: 🪙 Coin Flip
 
 on:
+  schedule:
+    - cron: "0 9 * * *"   # Every day at 9:00 AM UTC
   workflow_dispatch:
     inputs:
       session_id:
         description: "Session ID (leave blank to auto-generate from run ID)"
         required: false
         default: ""
+
+permissions:
+  contents: write
 
 jobs:
   flip:
@@ -16,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,26 +41,24 @@ jobs:
         id: coin
         run: SESSION_ID=${{ env.SESSION_ID }} python coin_flip.py
 
-      - name: Show Result
+      - name: Commit history
         run: |
-          echo ""
-          echo "┌─────────────────────────────────────────────────┐"
-          echo "│              🪙  COIN FLIP RESULT                │"
-          echo "├─────────────────────────────────────────────────┤"
-          echo "│  Session  : ${{ env.SESSION_ID }}"
-          echo "│  Words    : ${{ steps.coin.outputs.session_words }}"
-          echo "│  Result   : >>> ${{ steps.coin.outputs.result }} <<<"
-          echo "└─────────────────────────────────────────────────┘"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add flip_history.json
+          git diff --staged --quiet || git commit -m "chore: record flip result [skip ci]"
+          git push
 
       - name: Write Job Summary
         run: |
-          cat >> $GITHUB_STEP_SUMMARY << 'SUMMARY'
-          ## 🪙 Coin Flip Result
-          SUMMARY
-
+          echo "## 🪙 Coin Flip Result" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
           echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
           echo "| Session ID | \`${{ env.SESSION_ID }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| Session Words | \`${{ steps.coin.outputs.session_words }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| **Result** | **${{ steps.coin.outputs.result }}** |" >> $GITHUB_STEP_SUMMARY
+          echo "| FACE count | ${{ steps.coin.outputs.face_count }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| TAIL count | ${{ steps.coin.outputs.tail_count }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Total flips | ${{ steps.coin.outputs.total_flips }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Flip Hash | \`${{ steps.coin.outputs.flip_hash }}\` |" >> $GITHUB_STEP_SUMMARY
