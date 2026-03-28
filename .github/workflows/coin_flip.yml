@@ -1,0 +1,49 @@
+name: 🪙 Coin Flip
+
+on:
+  workflow_dispatch:
+    inputs:
+      session_id:
+        description: "Session ID (leave blank to auto-generate from run ID)"
+        required: false
+        default: ""
+
+jobs:
+  flip:
+    name: Flip the Coin
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve Session ID
+        id: session
+        run: |
+          if [ -n "${{ github.event.inputs.session_id }}" ]; then
+            echo "SESSION_ID=${{ github.event.inputs.session_id }}" >> $GITHUB_ENV
+          else
+            echo "SESSION_ID=run-${{ github.run_id }}-attempt-${{ github.run_attempt }}" >> $GITHUB_ENV
+          fi
+
+      - name: Flip the Coin
+        id: coin
+        env:
+          SESSION_ID: ${{ env.SESSION_ID }}
+        run: python coin_flip.py
+
+      - name: Summary
+        run: |
+          echo "## 🪙 Coin Flip Result" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Field        | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Session ID   | \`${{ env.SESSION_ID }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Result       | **${{ steps.coin.outputs.result }}** |" >> $GITHUB_STEP_SUMMARY
+          echo "| Word Chain   | \`${{ steps.coin.outputs.word_chain }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Flip Hash    | \`${{ steps.coin.outputs.flip_hash }}\` |" >> $GITHUB_STEP_SUMMARY
