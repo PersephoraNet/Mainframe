@@ -88,5 +88,35 @@
     ],
     "result": "FACE",
     "flip_hash": "a8780f9cfe6a0bd8542acd3dff656c0ccf1639f90797cb6f36f6226ee31feeeb0e3e2a88657f2b77698193ee9d128863c389ee29e1e40781368f41f75519807a"
+  },
+  {
+    "session_id": "test-connection",
+    "timestamp": "2026-03-31T21:49:46.696786+00:00",
+    "words": [
+      "powder",
+      "obvious",
+      "refraction",
+      "life",
+      "game",
+      "live",
+      "dispatch"
+    ],
+    "result": "FACE",
+    "flip_hash": "7937cfe31efc02ebd971718bcb38d8a1ab10da8cb307425b559122400fd08da190857054e4271b7f546dc2a43cca661866ac5375685f650afed28ae7a899f93e"
+  },
+  {
+    "session_id": "test-direct",
+    "timestamp": "2026-03-31T21:50:40.867674+00:00",
+    "words": [
+      "instance",
+      "live",
+      "refraction",
+      "game",
+      "powder",
+      "dispatch",
+      "visual"
+    ],
+    "result": "FACE",
+    "flip_hash": "248c2edcc6c69d233ef54dbc36d35123c922e9958e85d57fed7ea04c4563135c13249cae884566b7112801b0dcaa5d7390bd1f3737eaaf72246b272d6539b82a"
   }
 ]
