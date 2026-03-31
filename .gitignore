@@ -1,0 +1,5 @@
+secret.key
+__pycache__/
+*.pyc
+*.pyo
+soul_gate_full.zip

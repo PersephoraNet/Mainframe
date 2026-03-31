@@ -35,6 +35,7 @@ from auth.sha512_identity import SHA512IdentityLayer, IdentityToken
 from probation.behavioral_engine import BehavioralProbationEngine
 from voight_kampff.coherence_checker import VoightKampffChecker
 from scoring.soul_score import SoulScoreEngine, AccessTier
+from vault.key_vault import KeyVault
 
 
 # ─────────────────────────────────────────
@@ -81,6 +82,11 @@ if FASTAPI_AVAILABLE:
         permissions: list
         message: str
         timestamp: float
+
+    class VaultRequest(BaseModel):
+        agent_id: str
+        encoded_token: str
+        content: str
 
 # ─────────────────────────────────────────
 # SOUL GATE ORCHESTRATOR
@@ -281,6 +287,7 @@ class SoulGateOrchestrator:
 # ─────────────────────────────────────────
 
 gate = SoulGateOrchestrator()
+vault = KeyVault(gate)
 
 if FASTAPI_AVAILABLE:
     app = FastAPI(
@@ -357,3 +364,33 @@ if FASTAPI_AVAILABLE:
             "timestamp": time.time(),
             "system": SYSTEM_NAME
         }
+
+    # ─────────────────────────────────────────
+    # VAULT — LAYERED KEY ACCESS
+    # ─────────────────────────────────────────
+
+    @app.post("/vault/read")
+    async def vault_read(req: VaultRequest):
+        """
+        Read secret.key.
+        Requires DEEP tier (soul score >= 75, access:deep_systems).
+        Full Soul Gate pipeline runs on every request.
+        """
+        return vault.read(
+            agent_id=req.agent_id,
+            encoded_token=req.encoded_token,
+            content=req.content
+        )
+
+    @app.post("/vault/rotate")
+    async def vault_rotate(req: VaultRequest):
+        """
+        Rotate secret.key.
+        Requires SOVEREIGN tier (soul score >= 90, modify:operational_parameters).
+        Returns SHA-512 hash of new key — not the key itself.
+        """
+        return vault.rotate(
+            agent_id=req.agent_id,
+            encoded_token=req.encoded_token,
+            content=req.content
+        )
