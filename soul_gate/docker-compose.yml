@@ -1,0 +1,55 @@
+version: '3.9'
+
+services:
+
+  # ─── Python Soul Gate API ───
+  soul_gate_api:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: soul_gate_api
+    environment:
+      - SOUL_GATE_SECRET=${SOUL_GATE_SECRET:-change_this_in_production}
+      - PORT=8000
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - soul_net
+
+  # ─── Node.js Gateway ───
+  soul_gate_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    container_name: soul_gate_node
+    environment:
+      - SOUL_GATE_API=http://soul_gate_api:8000
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      soul_gate_api:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - soul_net
+
+  # ─── Redis for distributed state ───
+  redis:
+    image: redis:7-alpine
+    container_name: soul_gate_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    networks:
+      - soul_net
+
+networks:
+  soul_net:
+    driver: bridge
