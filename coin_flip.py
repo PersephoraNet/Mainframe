@@ -4,11 +4,7 @@ import os
 import json
 from datetime import datetime, timezone
 
-# Secret key SHA-512 hash
-KEY_HASH = (
-    "61027e050186ecfca69db93c7301fed2a37995e1e9d2ace74c54a4d4b8b8806b"
-    "818662c0c3490ca17879a0e5dfbe18d1ceb285bbaca83176216c10fcd3981e44"
-)
+from key_hash import SECRET_KEY_HASH as KEY_HASH
 
 WORDLIST = [
     "daemon", "libra", "epsylon", "zeta", "obvious", "target",
@@ -41,8 +37,9 @@ ASCII_TAIL = r"""
 HISTORY_FILE = "flip_history.json"
 
 
-def derive_session_words(session_id: str, count: int = 7) -> list:
-    seed = hashlib.sha512(f"{session_id}:{KEY_HASH}".encode()).hexdigest()
+def derive_session_words(session_id: str, count: int = 7, key_hash: str = None) -> list:
+    kh = key_hash or KEY_HASH
+    seed = hashlib.sha512(f"{session_id}:{kh}".encode()).hexdigest()
     selected, seen, i = [], set(), 0
     while len(selected) < count and i < len(seed) - 1:
         index = int(seed[i:i + 2], 16) % len(WORDLIST)
@@ -60,10 +57,11 @@ def derive_session_words(session_id: str, count: int = 7) -> list:
     return selected
 
 
-def flip_coin(session_id: str) -> dict:
-    session_words = derive_session_words(session_id)
+def flip_coin(session_id: str, key_hash: str = None) -> dict:
+    kh = key_hash or KEY_HASH
+    session_words = derive_session_words(session_id, key_hash=kh)
     word_chain = "-".join(session_words)
-    flip_hash = hashlib.sha512(f"{word_chain}:{KEY_HASH}".encode()).hexdigest()
+    flip_hash = hashlib.sha512(f"{word_chain}:{kh}".encode()).hexdigest()
     result = "FACE" if int(flip_hash[-1], 16) % 2 == 0 else "TAIL"
     return {
         "session_id": session_id,
@@ -108,12 +106,37 @@ def print_proof(data: dict):
 
 
 def main():
-    session_id = os.environ.get("SESSION_ID") or (sys.argv[1] if len(sys.argv) > 1 else None)
+    args = sys.argv[1:]
+    gate_mode = "--gate" in args
+    positional = [a for a in args if not a.startswith("--")]
+
+    session_id = os.environ.get("SESSION_ID") or (positional[0] if positional else None)
     if not session_id:
         print("ERROR: No SESSION_ID provided.")
         sys.exit(1)
 
-    data = flip_coin(session_id)
+    key_hash = None
+    if gate_mode:
+        import sys as _sys
+        _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "soul_gate"))
+        from api.main import SoulGateOrchestrator
+        from vault.flip_gate import FlipGate
+
+        agent_type = os.environ.get("SOUL_GATE_AGENT_TYPE", "human")
+        fg = FlipGate(SoulGateOrchestrator())
+        gate_result = fg.request(agent_type=agent_type, session_id=session_id)
+
+        print(f"\n  [SOUL GATE]  tier={gate_result['tier']}  "
+              f"score={gate_result['soul_score']:.1f}  "
+              f"granted={gate_result['granted']}")
+
+        if not gate_result["granted"]:
+            print(f"  [SOUL GATE]  DENIED — {gate_result['reason']}")
+            sys.exit(1)
+
+        key_hash = gate_result["key_hash"]
+
+    data = flip_coin(session_id, key_hash=key_hash)
 
     # ASCII art
     print(ASCII_FACE if data["result"] == "FACE" else ASCII_TAIL)
