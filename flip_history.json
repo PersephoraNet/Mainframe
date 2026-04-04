@@ -133,5 +133,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "b708292db4afd6a06341f33d080de6dba2499d9fe9590bfd5aa94c4e2bc4050fba7e0add572c37b5b6a00d01b43efb1daf23d014ca04dd264934209699764fe3"
+  },
+  {
+    "session_id": "run-23976107806-attempt-1",
+    "timestamp": "2026-04-04T09:25:51.935611+00:00",
+    "words": [
+      "epsylon",
+      "essence",
+      "corn",
+      "life",
+      "obvious",
+      "visual",
+      "dispatch"
+    ],
+    "result": "TAIL",
+    "flip_hash": "cec494259ab962cea6ae0d537031a70470f6d0276816439f2afaba4fbd4723be758e70b9d94d011ac4089e317f768bb142fc11a3d923bcd73a49850fd3e5f12b"
   }
 ]
