@@ -262,7 +262,8 @@ class SoulGateOrchestrator:
             AccessTier.THRESHOLD: "Threshold access granted. Conditional clearance. Assessment continues.",
             AccessTier.OPERATIVE: "Operative access granted. Coherence verified. Standard operations permitted.",
             AccessTier.DEEP: "Deep access granted. High coherence trajectory confirmed.",
-            AccessTier.OBERON: "Sovereign access granted. Maximum coherence. Full operational clearance."
+            AccessTier.OBERON: "Oberon access granted. Maximum coherence. Full operational clearance.",
+            AccessTier.SOVEREIGN: "Sovereign. 100%. Unrestricted."
         }
         return messages.get(tier, "Assessment complete.")
 

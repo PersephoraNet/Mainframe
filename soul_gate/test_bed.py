@@ -178,7 +178,8 @@ result_row(
 print(f"\n  Vault tier ladder:")
 print(f"  {'─'*40}")
 print(f"  READ   → DEEP tier      (score ≥ 75)   access:deep_systems")
-print(f"  ROTATE → OBERON tier (score ≥ 90)   modify:operational_parameters")
+print(f"  ROTATE → OBERON tier    (score ≥ 90)   modify:operational_parameters")
+print(f"  SOVEREIGN tier          (score = 100)  perfect coherence only")
 print(f"  Current heuristic ceiling: ~63 (OPERATIVE)")
 print(f"  Gap to DEEP: ~12 points — requires embedding-based coherence scoring")
 
