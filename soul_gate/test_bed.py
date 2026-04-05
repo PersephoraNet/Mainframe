@@ -1,5 +1,5 @@
 """
-SOUL GATE — INTEGRATION TEST BED
+SOUL GATE — ALPHA Draconis
 
 Exercises the full integrated stack:
     Layer 0  — SHA-512 identity
@@ -10,7 +10,7 @@ Exercises the full integrated stack:
     FlipGate — Word chain ledger recording
     CoinFlip — Key sync via key_hash.py
 
-Run: python test_bed.py
+Run: python test_bed.py  [ALPHA Draconis]
 """
 
 import sys
@@ -43,6 +43,10 @@ def result_row(label, passed, detail=""):
 # ─────────────────────────────────────────────────────────────
 # SETUP
 # ─────────────────────────────────────────────────────────────
+
+print(f"\n{'═' * W}")
+print(f"  ALPHA Draconis")
+print(f"{'═' * W}")
 
 section("SETUP — Key sync verification")
 
