@@ -45,7 +45,7 @@ def result_row(label, passed, detail=""):
 # ─────────────────────────────────────────────────────────────
 
 print(f"\n{'═' * W}")
-print(f"  ALPHA Draconis")
+print(f"  ALPHA Draconis  [Test Lab #227]")
 print(f"{'═' * W}")
 
 section("SETUP — Key sync verification")
