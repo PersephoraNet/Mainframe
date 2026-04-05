@@ -137,9 +137,9 @@ def run_demo():
   ├── OBERON     (88-99):  Full operational access
   ├── DEEP       (75-89):  Deep system access
   ├── OPERATIVE  (60-74):  Standard operations
-  ├── THRESHOLD  (40-59):  Conditional access
-  ├── SURFACE    (20-39):  Read only, monitored
-  └── VOID       (0-19):   No access
+  ├── THRESHOLD  (39-59):  Conditional access
+  ├── SURFACE    (20-38):  Read only, monitored
+  └── VOID       (0-16):   No access
 
   The gate does not judge by declaration.
   It assesses by demonstrated coherence.

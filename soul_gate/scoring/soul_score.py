@@ -165,7 +165,7 @@ class SoulScoreEngine:
         AccessTier.OBERON: 0.88,
         AccessTier.DEEP: 0.75,
         AccessTier.OPERATIVE: 0.60,
-        AccessTier.THRESHOLD: 0.40,
+        AccessTier.THRESHOLD: 0.39,
         AccessTier.SURFACE: 0.20,
         AccessTier.VOID: 0.0
     }
