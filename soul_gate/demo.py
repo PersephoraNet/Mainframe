@@ -134,7 +134,7 @@ def run_demo():
     print(f"""
   TIER LADDER:
   ├── SOVEREIGN  (100):    Perfect coherence. Unrestricted.
-  ├── OBERON     (90-99):  Full operational access
+  ├── OBERON     (88-99):  Full operational access
   ├── DEEP       (75-89):  Deep system access
   ├── OPERATIVE  (60-74):  Standard operations
   ├── THRESHOLD  (40-59):  Conditional access

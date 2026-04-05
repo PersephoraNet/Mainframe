@@ -162,7 +162,7 @@ class SoulScoreEngine:
     # Score thresholds for tiers
     TIER_THRESHOLDS = {
         AccessTier.SOVEREIGN: 1.0,
-        AccessTier.OBERON: 0.90,
+        AccessTier.OBERON: 0.88,
         AccessTier.DEEP: 0.75,
         AccessTier.OPERATIVE: 0.60,
         AccessTier.THRESHOLD: 0.40,
