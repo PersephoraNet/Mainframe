@@ -168,17 +168,17 @@ result_row(
     "ceiling of heuristic scorer: DEEP=75 unreachable without embedding-based coherence"
 )
 
-# Rotate requires SOVEREIGN
+# Rotate requires OBERON
 rot_r = vault.rotate(op_agent["agent_id"], op_agent["encoded_token"], RICH_CONTENT)
 result_row(
-    f"Rotate denied    (tier={rot_r['tier']}) — SOVEREIGN required",
+    f"Rotate denied    (tier={rot_r['tier']}) — OBERON required",
     not rot_r["granted"]
 )
 
 print(f"\n  Vault tier ladder:")
 print(f"  {'─'*40}")
 print(f"  READ   → DEEP tier      (score ≥ 75)   access:deep_systems")
-print(f"  ROTATE → SOVEREIGN tier (score ≥ 90)   modify:operational_parameters")
+print(f"  ROTATE → OBERON tier (score ≥ 90)   modify:operational_parameters")
 print(f"  Current heuristic ceiling: ~63 (OPERATIVE)")
 print(f"  Gap to DEEP: ~12 points — requires embedding-based coherence scoring")
 
@@ -266,7 +266,7 @@ print(f"""
 
   Known ceiling:
     Heuristic scorer tops at ~63 (OPERATIVE).
-    DEEP (75) and SOVEREIGN (90) require richer coherence
+    DEEP (75) and OBERON (90) require richer coherence
     measurement — embedding similarity or LLM-backed scoring.
     The vault gate is correctly positioned; the scorer needs
     to close the gap.

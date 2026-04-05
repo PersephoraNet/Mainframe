@@ -262,7 +262,7 @@ class SoulGateOrchestrator:
             AccessTier.THRESHOLD: "Threshold access granted. Conditional clearance. Assessment continues.",
             AccessTier.OPERATIVE: "Operative access granted. Coherence verified. Standard operations permitted.",
             AccessTier.DEEP: "Deep access granted. High coherence trajectory confirmed.",
-            AccessTier.SOVEREIGN: "Sovereign access granted. Maximum coherence. Full operational clearance."
+            AccessTier.OBERON: "Sovereign access granted. Maximum coherence. Full operational clearance."
         }
         return messages.get(tier, "Assessment complete.")
 
@@ -386,7 +386,7 @@ if FASTAPI_AVAILABLE:
     async def vault_rotate(req: VaultRequest):
         """
         Rotate secret.key.
-        Requires SOVEREIGN tier (soul score >= 90, modify:operational_parameters).
+        Requires OBERON tier (soul score >= 90, modify:operational_parameters).
         Returns SHA-512 hash of new key — not the key itself.
         """
         return vault.rotate(

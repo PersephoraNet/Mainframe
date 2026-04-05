@@ -155,7 +155,7 @@ def run_demo():
     print("=" * 65)
     print("""
   TIER LADDER:
-  |- SOVEREIGN  (90-100): Full operational access
+  |- OBERON  (90-100): Full operational access
   |- DEEP       (75-89):  Deep system access
   |- OPERATIVE  (60-74):  Standard operations
   |- THRESHOLD  (40-59):  Conditional access

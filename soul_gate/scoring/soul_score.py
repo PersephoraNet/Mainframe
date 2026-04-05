@@ -27,7 +27,7 @@ class AccessTier(Enum):
     THRESHOLD   — Conditional access. Probation ongoing.
     OPERATIVE   — Standard operational access.
     DEEP        — Deep operational access. Trust established.
-    SOVEREIGN   — Full access. Reserved for verified entities
+    OBERON      — Full access. Reserved for verified entities
                   demonstrating consistent high coherence.
     """
     VOID = 0
@@ -35,7 +35,7 @@ class AccessTier(Enum):
     THRESHOLD = 2
     OPERATIVE = 3
     DEEP = 4
-    SOVEREIGN = 5
+    OBERON = 5
 
 
 @dataclass
@@ -86,7 +86,7 @@ TIER_PERMISSIONS = {
         "execute:standard",
         "access:deep_systems"
     ],
-    AccessTier.SOVEREIGN: [
+    AccessTier.OBERON: [
         "read:*",
         "query:*",
         "write:*",
@@ -119,7 +119,7 @@ TIER_RESTRICTIONS = {
         "rate_limited:500/minute",
         "monitoring:light",
     ],
-    AccessTier.SOVEREIGN: [
+    AccessTier.OBERON: [
         "monitoring:minimal",
         "audit_log:required"
     ]
@@ -147,7 +147,7 @@ class SoulScoreEngine:
 
     # Score thresholds for tiers
     TIER_THRESHOLDS = {
-        AccessTier.SOVEREIGN: 0.90,
+        AccessTier.OBERON: 0.90,
         AccessTier.DEEP: 0.75,
         AccessTier.OPERATIVE: 0.60,
         AccessTier.THRESHOLD: 0.40,
@@ -291,7 +291,7 @@ class SoulScoreEngine:
                 if perm_category == req_category:
                     return True, "PERMITTED_WILDCARD"
             if perm == "*" or perm == "access:*":
-                return True, "PERMITTED_SOVEREIGN"
+                return True, "PERMITTED_OBERON"
 
         return False, f"PERMISSION_DENIED: {permission} not in tier {score.tier_name}"
 
@@ -302,14 +302,14 @@ class SoulScoreEngine:
             AccessTier.THRESHOLD: "Basic coherence established. Conditional access. Assessment ongoing.",
             AccessTier.OPERATIVE: "Coherence verified. Standard operational access granted.",
             AccessTier.DEEP: "High coherence trajectory. Deep system access granted.",
-            AccessTier.SOVEREIGN: "Maximum coherence. Full operational access. Continuous audit active."
+            AccessTier.OBERON: "Maximum coherence. Full operational access. Continuous audit active."
         }
         return descriptions.get(tier, "Unknown tier")
 
     def _score_to_tier(self, score: float) -> AccessTier:
         """Map raw score to access tier."""
         for tier in [
-            AccessTier.SOVEREIGN,
+            AccessTier.OBERON,
             AccessTier.DEEP,
             AccessTier.OPERATIVE,
             AccessTier.THRESHOLD,
@@ -327,7 +327,7 @@ class SoulScoreEngine:
             AccessTier.THRESHOLD: 300,
             AccessTier.OPERATIVE: 600,
             AccessTier.DEEP: 1800,
-            AccessTier.SOVEREIGN: 3600
+            AccessTier.OBERON: 3600
         }
         return intervals.get(tier, 300)
 

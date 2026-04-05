@@ -7,7 +7,7 @@ No agent reads or rotates the key by declaration — only by demonstrated cohere
 Access tiers required:
 
     READ   → DEEP tier     (access:deep_systems)
-    ROTATE → SOVEREIGN tier (modify:operational_parameters)
+    ROTATE → OBERON tier (modify:operational_parameters)
 
 The Soul Gate pipeline runs in full for every vault request:
     Layer 0 — SHA-512 identity verification
@@ -23,7 +23,7 @@ import time
 KEY_FILE = os.path.join(os.path.dirname(__file__), "..", "..", "secret.key")
 
 READ_PERMISSION   = "access:deep_systems"       # DEEP tier
-ROTATE_PERMISSION = "modify:operational_parameters"  # SOVEREIGN tier
+ROTATE_PERMISSION = "modify:operational_parameters"  # OBERON tier
 
 
 class KeyVault:
@@ -74,7 +74,7 @@ class KeyVault:
     def rotate(self, agent_id: str, encoded_token: str, content: str) -> dict:
         """
         Rotate secret.key.
-        Requires SOVEREIGN tier (modify:operational_parameters).
+        Requires OBERON tier (modify:operational_parameters).
         Generates new key from os.urandom(32), writes to disk.
         Returns SHA-512 hash of new key — not the key itself.
         """
@@ -91,7 +91,7 @@ class KeyVault:
         if not access["granted"]:
             return self._denied(
                 agent_id,
-                f"TIER_INSUFFICIENT: {assessment['tier']} — SOVEREIGN required for key rotation",
+                f"TIER_INSUFFICIENT: {assessment['tier']} — OBERON required for key rotation",
                 assessment
             )
 

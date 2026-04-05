@@ -38,7 +38,7 @@ function rateLimiter(tier) {
     THRESHOLD: 30,
     OPERATIVE: 100,
     DEEP: 500,
-    SOVEREIGN: Infinity
+    OBERON: Infinity
   };
   return limits[tier] || 10;
 }
