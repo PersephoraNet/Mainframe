@@ -163,5 +163,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "bb66b1c55f9ce96efd168bc9f00adf659f0944091998874f0b943491f55293617e2395d1d18cb7b5f443f6672e5e6c3daff568579a8019a57a53efebff345cc5"
+  },
+  {
+    "session_id": "run-24027462071-attempt-1",
+    "timestamp": "2026-04-06T09:57:05.076641+00:00",
+    "words": [
+      "instance",
+      "refraction",
+      "long",
+      "essence",
+      "visual",
+      "live",
+      "life"
+    ],
+    "result": "FACE",
+    "flip_hash": "dbf9b91b94fab78b1da0adbce197fa46f0c7645053d8e43aab505e643493e7115fa4a3aed711d58f8afae545602299a48ece7d6769b5c91374e3c38fbe16c87e"
   }
 ]
