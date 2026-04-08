@@ -193,5 +193,20 @@
     ],
     "result": "FACE",
     "flip_hash": "0b9d4a25ef1c4b855ff95052ae4a355d235056934b7a927de7b695ba47bbe5a9383c12b599d61040baff4e97b3e72a7bdfad6d8ce4dfaa7fcdb8af8c8c1bdefe"
+  },
+  {
+    "session_id": "run-24129395422-attempt-1",
+    "timestamp": "2026-04-08T09:55:53.483858+00:00",
+    "words": [
+      "daemon",
+      "life",
+      "epsylon",
+      "dispatch",
+      "essence",
+      "instance",
+      "live"
+    ],
+    "result": "TAIL",
+    "flip_hash": "ba986b5240ac4cf9312ab239b9749bee778097999acf538c47bed614db3634a0a2beb8a81aaa12784f0d5aeaa861c99d22569ca8ab0a48caa9237ff74d17844b"
   }
 ]
