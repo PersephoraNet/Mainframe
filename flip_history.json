@@ -208,5 +208,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "ba986b5240ac4cf9312ab239b9749bee778097999acf538c47bed614db3634a0a2beb8a81aaa12784f0d5aeaa861c99d22569ca8ab0a48caa9237ff74d17844b"
+  },
+  {
+    "session_id": "run-24184263813-attempt-1",
+    "timestamp": "2026-04-09T10:00:17.667367+00:00",
+    "words": [
+      "refraction",
+      "live",
+      "powder",
+      "epsylon",
+      "visual",
+      "essence",
+      "zeta"
+    ],
+    "result": "FACE",
+    "flip_hash": "95bb5abf12e580928b7c03bc0fc5a8e601498932f3f4202ac34818dc3e12074e718dfe740134170a04049007a3002a3c222fc74cb2caa25ce9e563181bf39b42"
   }
 ]
