@@ -223,5 +223,20 @@
     ],
     "result": "FACE",
     "flip_hash": "95bb5abf12e580928b7c03bc0fc5a8e601498932f3f4202ac34818dc3e12074e718dfe740134170a04049007a3002a3c222fc74cb2caa25ce9e563181bf39b42"
+  },
+  {
+    "session_id": "run-24237402811-attempt-1",
+    "timestamp": "2026-04-10T09:57:32.509555+00:00",
+    "words": [
+      "target",
+      "refraction",
+      "epsylon",
+      "live",
+      "libra",
+      "instance",
+      "visual"
+    ],
+    "result": "FACE",
+    "flip_hash": "e1d095645fb12d4308b4f6ab64f8819e93c829948b1ebe99269f80c972db62c0c1e5ab77d9a87e239b1a875f6ca48d304cb98a37bfea21afd7d7e450849b8ef4"
   }
 ]
