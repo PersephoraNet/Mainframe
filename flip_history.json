@@ -343,5 +343,20 @@
     ],
     "result": "FACE",
     "flip_hash": "6e6ad3a6bda53d223669251e687bdda2251f6aa1eb8675ce1d9258ea74dbf7a51e6a6eb93672cbe617cd8bb802cccea9fce6055656a8ba5c765a700c62f006f2"
+  },
+  {
+    "session_id": "run-24601879251-attempt-1",
+    "timestamp": "2026-04-18T09:35:51.943801+00:00",
+    "words": [
+      "refraction",
+      "zeta",
+      "target",
+      "essence",
+      "obvious",
+      "epsylon",
+      "instance"
+    ],
+    "result": "TAIL",
+    "flip_hash": "10ab585f984c739a6030330f7bef60b52dd79ee350212ccc0fbbefbec3994feed12ac64e77349352c52e99563b55c0ab5110818d0326bfb1e2e4c62ed3c9f2f1"
   }
 ]
