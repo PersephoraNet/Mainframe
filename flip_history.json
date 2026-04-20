@@ -373,5 +373,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "56db5b0e1c8e6cb5a0b4baf909372879ab105f829578e5ef5f87724a66051343d8c050ecbb9bf27b08c73adc5bca5ed48c2781778720100a250847c028c36c45"
+  },
+  {
+    "session_id": "run-24661417374-attempt-1",
+    "timestamp": "2026-04-20T10:25:28.544568+00:00",
+    "words": [
+      "visual",
+      "dispatch",
+      "libra",
+      "instance",
+      "powder",
+      "live",
+      "game"
+    ],
+    "result": "FACE",
+    "flip_hash": "5418794ee900631a5aea738f341c9f3c31c3d91ad6a413b1f495c9f8b2c28224a60a0d3be8011f118edee58b788c2535e19af023a208b6b234bbd08c93ede7d4"
   }
 ]
