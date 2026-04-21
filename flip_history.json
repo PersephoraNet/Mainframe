@@ -388,5 +388,20 @@
     ],
     "result": "FACE",
     "flip_hash": "5418794ee900631a5aea738f341c9f3c31c3d91ad6a413b1f495c9f8b2c28224a60a0d3be8011f118edee58b788c2535e19af023a208b6b234bbd08c93ede7d4"
+  },
+  {
+    "session_id": "run-24716573582-attempt-1",
+    "timestamp": "2026-04-21T10:08:09.977763+00:00",
+    "words": [
+      "epsylon",
+      "powder",
+      "target",
+      "essence",
+      "life",
+      "daemon",
+      "instance"
+    ],
+    "result": "FACE",
+    "flip_hash": "48ba4b4bd7236fac0f72f34fde42a8f511a59c04a9f288219220efced23068d566685f188c2e56caa1799371b581c21a78016f483c7a2a717a83c4119b5f0032"
   }
 ]
