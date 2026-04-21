@@ -42,7 +42,15 @@ from vault.key_vault import KeyVault
 # CONFIGURATION
 # ─────────────────────────────────────────
 
-MASTER_SECRET = os.environ.get("SOUL_GATE_SECRET", "development_secret_change_in_production")
+_raw_secret = os.environ.get("SOUL_GATE_SECRET")
+if not _raw_secret:
+    raise RuntimeError(
+        "SOUL_GATE_SECRET environment variable is not set. "
+        "Generate one with: python -c \"import secrets; print(secrets.token_hex(32))\""
+    )
+if len(_raw_secret) < 32:
+    raise RuntimeError("SOUL_GATE_SECRET must be >= 32 characters of entropy.")
+MASTER_SECRET = _raw_secret
 API_VERSION = "1.0.0"
 SYSTEM_NAME = "SOUL GATE"
 
