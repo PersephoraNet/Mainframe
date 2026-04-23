@@ -418,5 +418,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "c26cbdabf2ffbf4d5e78d96d239a74f6bea6c2b5ed1000b652f21cbf8b435ee50c15cb942a8efc9fbf72f65135f48081ad329a007dac4c9c1c153bc491ecaa17"
+  },
+  {
+    "session_id": "run-24829542380-attempt-1",
+    "timestamp": "2026-04-23T10:11:32.019684+00:00",
+    "words": [
+      "game",
+      "long",
+      "essence",
+      "zeta",
+      "instance",
+      "target",
+      "obvious"
+    ],
+    "result": "FACE",
+    "flip_hash": "32a426ad3a9043ccd0d4e91f9011ddc3aec8beda5e9ca54a02ceb0b1b647fd631af83f7270216b54e818b88af698fb1312b5340e59fe60853f504c171c97d37a"
   }
 ]
