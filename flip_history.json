@@ -433,5 +433,20 @@
     ],
     "result": "FACE",
     "flip_hash": "32a426ad3a9043ccd0d4e91f9011ddc3aec8beda5e9ca54a02ceb0b1b647fd631af83f7270216b54e818b88af698fb1312b5340e59fe60853f504c171c97d37a"
+  },
+  {
+    "session_id": "run-24884265368-attempt-1",
+    "timestamp": "2026-04-24T10:13:25.237562+00:00",
+    "words": [
+      "live",
+      "life",
+      "instance",
+      "epsylon",
+      "essence",
+      "game",
+      "zeta"
+    ],
+    "result": "TAIL",
+    "flip_hash": "613369a97e489a5044734c2b636171cdb1e5551616987e006d77e72953d2cce329825dcdbe556b867170407bc1e3b30f89bf78b2f853577211b262ce47d509bf"
   }
 ]
