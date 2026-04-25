@@ -448,5 +448,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "613369a97e489a5044734c2b636171cdb1e5551616987e006d77e72953d2cce329825dcdbe556b867170407bc1e3b30f89bf78b2f853577211b262ce47d509bf"
+  },
+  {
+    "session_id": "run-24927987066-attempt-1",
+    "timestamp": "2026-04-25T09:39:33.606113+00:00",
+    "words": [
+      "obvious",
+      "target",
+      "visual",
+      "zeta",
+      "live",
+      "game",
+      "essence"
+    ],
+    "result": "TAIL",
+    "flip_hash": "10d71d3af9c1bf8b3731ee65a84a89af0e3dc74b6fb5d7d9cbc9368e5a24f8a511d4bf25c8be894834e9a0131644592f99b4c3afde541416c5bd6898faea8ef3"
   }
 ]
