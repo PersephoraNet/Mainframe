@@ -538,5 +538,20 @@
     ],
     "result": "FACE",
     "flip_hash": "601fe141aaf0b9f7d2fd893a5efcc3828d4a3f45f07598df0c27375748cf3029f0ec9e150462d5472db15c1e932a2bb8734829280bdbbb80c4756075aedcab3e"
+  },
+  {
+    "session_id": "run-25210769623-attempt-1",
+    "timestamp": "2026-05-01T10:12:42.744300+00:00",
+    "words": [
+      "epsylon",
+      "dispatch",
+      "libra",
+      "long",
+      "live",
+      "life",
+      "visual"
+    ],
+    "result": "TAIL",
+    "flip_hash": "97727293070d8a0af60c2a9e4bd726e3ba408d33369de8baf201ac9736175bcb1280eff1f0a9717286af1a16758350bba1450f2ff0d74af54a0dfa078590e033"
   }
 ]
