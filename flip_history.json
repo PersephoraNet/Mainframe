@@ -568,5 +568,20 @@
     ],
     "result": "FACE",
     "flip_hash": "3dc4ed692f914c64811ad83d9d7333728665373d1048d966649f7c61405828a11b5ad9c6c3e04a4af4f45b465a3af2040cef02e38510f811cd81ec008d13254e"
+  },
+  {
+    "session_id": "run-25276046629-attempt-1",
+    "timestamp": "2026-05-03T09:57:15.256095+00:00",
+    "words": [
+      "target",
+      "dispatch",
+      "game",
+      "essence",
+      "instance",
+      "epsylon",
+      "daemon"
+    ],
+    "result": "TAIL",
+    "flip_hash": "4194d9120ada84a3a18a3e0a4c6d85ce2bbcffa7374a4d505298b1223c0eafe9df2a4af218f705335afea063759de7e034e811f7e5610f429b8e915ca83551fb"
   }
 ]
