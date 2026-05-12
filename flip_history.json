@@ -703,5 +703,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "7149897d9a82635b13e706c3972301827c298d0f54e33e558252eb2708fec5a73bafe57a4c833994c3793d6905b36e8ab563e6fb227c8c19718e950d8acbafad"
+  },
+  {
+    "session_id": "run-25730545438-attempt-1",
+    "timestamp": "2026-05-12T11:08:18.857057+00:00",
+    "words": [
+      "visual",
+      "dispatch",
+      "live",
+      "corn",
+      "instance",
+      "game",
+      "epsylon"
+    ],
+    "result": "TAIL",
+    "flip_hash": "3f0209db259b6654e7d876c5562988c6a464ec0080e920ceb00a92b316b8a876dffd195ee52384a35595f5eff63fd6b8364a1fa0e9faa02a82ef96a0ae8bdb33"
   }
 ]
