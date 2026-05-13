@@ -718,5 +718,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "3f0209db259b6654e7d876c5562988c6a464ec0080e920ceb00a92b316b8a876dffd195ee52384a35595f5eff63fd6b8364a1fa0e9faa02a82ef96a0ae8bdb33"
+  },
+  {
+    "session_id": "run-25795926718-attempt-1",
+    "timestamp": "2026-05-13T11:22:04.849071+00:00",
+    "words": [
+      "refraction",
+      "libra",
+      "target",
+      "life",
+      "corn",
+      "zeta",
+      "dispatch"
+    ],
+    "result": "FACE",
+    "flip_hash": "4854a5d47f4a1d3e06a1632006950f7e166f03d0157891eb63a784b0b9c1ebaac98b3247253254b39296d12fd621fd93e600aa841c0fcfc9c0725ebc6219524a"
   }
 ]
