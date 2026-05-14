@@ -733,5 +733,20 @@
     ],
     "result": "FACE",
     "flip_hash": "4854a5d47f4a1d3e06a1632006950f7e166f03d0157891eb63a784b0b9c1ebaac98b3247253254b39296d12fd621fd93e600aa841c0fcfc9c0725ebc6219524a"
+  },
+  {
+    "session_id": "run-25856668177-attempt-1",
+    "timestamp": "2026-05-14T11:06:18.037740+00:00",
+    "words": [
+      "libra",
+      "long",
+      "instance",
+      "dispatch",
+      "daemon",
+      "epsylon",
+      "powder"
+    ],
+    "result": "TAIL",
+    "flip_hash": "aea89cc80f539068382ac024352ca6e2fcb30201a2347a8d1becad6dfc410a1fa9170a3d9eac3c31a1f713c607dfe438fcace5fedb3597b7f7ae7268535774c9"
   }
 ]
