@@ -778,5 +778,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "2fc0ece5d7b0f0eaaf3ae53b098db007db42ed983cfdb267b76a5cfaa29accde0a71d7249865ef1f6782987202ab087f93e6928eb537586d7ac761172aa4d2ff"
+  },
+  {
+    "session_id": "run-25988045867-attempt-1",
+    "timestamp": "2026-05-17T10:14:48.781302+00:00",
+    "words": [
+      "long",
+      "life",
+      "visual",
+      "zeta",
+      "instance",
+      "refraction",
+      "live"
+    ],
+    "result": "FACE",
+    "flip_hash": "760cc200cd8bee2f6256b76ccd1b6e0fb5038662d3bd3837cba2556d09ed43597997dab46e483f0a767a6861cfe1a769bc66bfb51184ff52d8e7aa2f54ca7b10"
   }
 ]
