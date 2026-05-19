@@ -808,5 +808,20 @@
     ],
     "result": "FACE",
     "flip_hash": "7a202df0b9ea540429acb38ed6d00aea334ca25cebc1f0e1fcbb12cb3e08c0644ed4114552934dc0a81f18c1ebb10791a262731ea01e540926a856bc9ccb2ef2"
+  },
+  {
+    "session_id": "run-26095336831-attempt-1",
+    "timestamp": "2026-05-19T11:51:41.690621+00:00",
+    "words": [
+      "long",
+      "life",
+      "dispatch",
+      "powder",
+      "game",
+      "essence",
+      "zeta"
+    ],
+    "result": "FACE",
+    "flip_hash": "78090175d0e3b8274f6966c2c2c2f2996c1a613e48fcd3aa2ba436e3599f7f6d3efa250636b775741196ed8094ce1c41d9a3862e894eaf25bbeeb9f457558d42"
   }
 ]
