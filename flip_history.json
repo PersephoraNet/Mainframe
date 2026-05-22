@@ -853,5 +853,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "b36c365fc4b25fa28c1f31a2dbebeb762bb2977ae9f85821fc1cfb837f107c9135fd5ee059eabc1a3043e20ede3ba9741bc159fd0c6da9ba0e3aa3300f3afa8f"
+  },
+  {
+    "session_id": "run-26285439797-attempt-1",
+    "timestamp": "2026-05-22T11:35:30.293997+00:00",
+    "words": [
+      "dispatch",
+      "daemon",
+      "visual",
+      "refraction",
+      "target",
+      "long",
+      "zeta"
+    ],
+    "result": "TAIL",
+    "flip_hash": "a8b807464bc8a107f23d35cc8dfa73db4c30daf1a74774ded7c8ba504e6db9d585b7340668413121cb99d2fb5dc128f84466db136e6cd90ff4a540f09bd2020f"
   }
 ]
