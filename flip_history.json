@@ -898,5 +898,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "9dc97cef785bfcac57375bf2a2bd7b2ecb72a45a35fcd01bf91eb95b0a8cea7590a259883b7f0676a9763df071c0889b4ca90c24f175e9120edf37b2f425159b"
+  },
+  {
+    "session_id": "run-26399993202-attempt-1",
+    "timestamp": "2026-05-25T12:15:20.321484+00:00",
+    "words": [
+      "powder",
+      "life",
+      "long",
+      "visual",
+      "libra",
+      "game",
+      "refraction"
+    ],
+    "result": "FACE",
+    "flip_hash": "4405c7d3b67776c3795c544bbd9e2e2f1c44bf68129094820bf64efd17b8c80cd6ffda9d287cd23cf9960b42d6d9b21b06fb4a62cf2fdd6b48c752244f40d96c"
   }
 ]
