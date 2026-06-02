@@ -988,5 +988,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "994141c9319353043f086d615811125af433ffc80e8943ceeecbe34334176b65677c85fcbc044958510d6bd6dbbaca0d3953f959bb22b5363421ef1150dc42bd"
+  },
+  {
+    "session_id": "run-26819848725-attempt-1",
+    "timestamp": "2026-06-02T12:31:38.912585+00:00",
+    "words": [
+      "long",
+      "game",
+      "obvious",
+      "daemon",
+      "target",
+      "powder",
+      "essence"
+    ],
+    "result": "FACE",
+    "flip_hash": "63f628b2f15c56e5d34dee0e7a84af4aed549e309c51148b62abcc49e1451bf20827f9bc914b805d0f5e8e24a7490b7ef8c78c3293ecb24c62a9a79b8a50cf68"
   }
 ]
