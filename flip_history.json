@@ -1183,5 +1183,20 @@
     ],
     "result": "FACE",
     "flip_hash": "cdb9dbc349f0ac98d69f936ba71ff6746932d1b143a75e464104258ef86c18935c643eaac81341b72960799d1903a20d20ab3278ca71c54616ae53b33525ee38"
+  },
+  {
+    "session_id": "run-27554850043-attempt-1",
+    "timestamp": "2026-06-15T14:52:25.665552+00:00",
+    "words": [
+      "visual",
+      "powder",
+      "zeta",
+      "refraction",
+      "target",
+      "game",
+      "instance"
+    ],
+    "result": "TAIL",
+    "flip_hash": "088e120c135b79da5a3f0889b5a534ccc3e4e8c1be9bf0c062da95524552f47f6d48b778cc40d19cccb5f7224b637afa3fd253379c1eb7f3baa57abb09eda0a3"
   }
 ]
