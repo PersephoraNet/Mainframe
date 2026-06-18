@@ -1228,5 +1228,20 @@
     ],
     "result": "FACE",
     "flip_hash": "23d0d918860685752a846fbb8205b0a46d368ba44da64ed584077b18dec53abb748fbda84beec05ea34f059655a1ea7547792d0c6d8eda54f75ba9a1586380c0"
+  },
+  {
+    "session_id": "run-27758695574-attempt-1",
+    "timestamp": "2026-06-18T12:14:55.494922+00:00",
+    "words": [
+      "zeta",
+      "epsylon",
+      "target",
+      "instance",
+      "daemon",
+      "long",
+      "game"
+    ],
+    "result": "TAIL",
+    "flip_hash": "2b0a9287baab4c66a4da270f9ae036df696a6a879240953e25f9414d7c7fd4d0ff47a641c758bb7a0625128571227a17464b453f2a26e4eacaa0903483040e8b"
   }
 ]
