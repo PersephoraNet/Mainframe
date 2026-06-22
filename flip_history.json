@@ -1288,5 +1288,20 @@
     ],
     "result": "FACE",
     "flip_hash": "21c7d308e702eeb585dcd7167183c95f93e0fecdceeaa0c7e22f827fea20977b3456445aeeaf249f2820683a1897551a6d74e88982b2da8dd823173ae0e24524"
+  },
+  {
+    "session_id": "run-27959595536-attempt-1",
+    "timestamp": "2026-06-22T14:20:45.300185+00:00",
+    "words": [
+      "epsylon",
+      "powder",
+      "libra",
+      "instance",
+      "corn",
+      "live",
+      "refraction"
+    ],
+    "result": "FACE",
+    "flip_hash": "5c427045c5d9f53ddadcfbc8c2a8bc17a2fa935e699d7c9f3e819bbc5ef124449a9ceec76bd5b9aef5ad5643ee00267fcfd666b6742d54e754dbdf3b6b7b8880"
   }
 ]
