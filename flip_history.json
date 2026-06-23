@@ -1303,5 +1303,20 @@
     ],
     "result": "FACE",
     "flip_hash": "5c427045c5d9f53ddadcfbc8c2a8bc17a2fa935e699d7c9f3e819bbc5ef124449a9ceec76bd5b9aef5ad5643ee00267fcfd666b6742d54e754dbdf3b6b7b8880"
+  },
+  {
+    "session_id": "run-28023995893-attempt-1",
+    "timestamp": "2026-06-23T11:49:25.935831+00:00",
+    "words": [
+      "refraction",
+      "corn",
+      "visual",
+      "long",
+      "dispatch",
+      "zeta",
+      "libra"
+    ],
+    "result": "TAIL",
+    "flip_hash": "d437c1dc00ad971a77447ef283d442488aa95e5ad0392a740f1aa72aba5942f1519e21a5a89a8f7bf3493d01492c1cf8805e8ecb533e3b74fe5e4f28253b9b75"
   }
 ]
