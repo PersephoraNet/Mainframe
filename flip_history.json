@@ -1318,5 +1318,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "d437c1dc00ad971a77447ef283d442488aa95e5ad0392a740f1aa72aba5942f1519e21a5a89a8f7bf3493d01492c1cf8805e8ecb533e3b74fe5e4f28253b9b75"
+  },
+  {
+    "session_id": "run-28095582406-attempt-1",
+    "timestamp": "2026-06-24T11:35:19.301277+00:00",
+    "words": [
+      "live",
+      "daemon",
+      "visual",
+      "libra",
+      "corn",
+      "game",
+      "long"
+    ],
+    "result": "FACE",
+    "flip_hash": "c5b850b8c40395be5ff664312a16117c2cf2bfa242c5dad4157dc646e90906a3a2b902658782ae6af3a7a525181457ca5230a3c654468b91760aa43adc51c730"
   }
 ]
