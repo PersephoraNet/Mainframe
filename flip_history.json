@@ -1333,5 +1333,20 @@
     ],
     "result": "FACE",
     "flip_hash": "c5b850b8c40395be5ff664312a16117c2cf2bfa242c5dad4157dc646e90906a3a2b902658782ae6af3a7a525181457ca5230a3c654468b91760aa43adc51c730"
+  },
+  {
+    "session_id": "run-28166933099-attempt-1",
+    "timestamp": "2026-06-25T11:29:34.922735+00:00",
+    "words": [
+      "refraction",
+      "obvious",
+      "long",
+      "game",
+      "live",
+      "daemon",
+      "instance"
+    ],
+    "result": "FACE",
+    "flip_hash": "c23abc410820a68be479562d2681f2244a0b46120ec6f6a18830876629ff7aa4b0ba264ab4ad7bf8c63f01c73620c3d29e14232a076a236174c82d749e46dadc"
   }
 ]
