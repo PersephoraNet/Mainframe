@@ -1348,5 +1348,20 @@
     ],
     "result": "FACE",
     "flip_hash": "c23abc410820a68be479562d2681f2244a0b46120ec6f6a18830876629ff7aa4b0ba264ab4ad7bf8c63f01c73620c3d29e14232a076a236174c82d749e46dadc"
+  },
+  {
+    "session_id": "run-28235485952-attempt-1",
+    "timestamp": "2026-06-26T11:35:26.368556+00:00",
+    "words": [
+      "instance",
+      "corn",
+      "long",
+      "obvious",
+      "game",
+      "essence",
+      "libra"
+    ],
+    "result": "TAIL",
+    "flip_hash": "23cd8bd4d5e335f7fae69c0713b8cd1e56752896ec8eee3eb1f38775b8cab18a0bcbd0a5065566cec71155caac7a3654214aa755a3af81975f7a71f1bbbe487d"
   }
 ]
