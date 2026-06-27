@@ -1363,5 +1363,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "23cd8bd4d5e335f7fae69c0713b8cd1e56752896ec8eee3eb1f38775b8cab18a0bcbd0a5065566cec71155caac7a3654214aa755a3af81975f7a71f1bbbe487d"
+  },
+  {
+    "session_id": "run-28286997344-attempt-1",
+    "timestamp": "2026-06-27T10:49:55.547305+00:00",
+    "words": [
+      "life",
+      "libra",
+      "instance",
+      "dispatch",
+      "corn",
+      "essence",
+      "zeta"
+    ],
+    "result": "TAIL",
+    "flip_hash": "2014d5239c1a1e2f3f947ebfa996b57335d100c4c1aeb11ec278d42a5f9adf36d6feed966a5299f6b511d9f5438c29142298428ad9608c8494aab0c029aa0149"
   }
 ]
