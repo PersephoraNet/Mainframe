@@ -1393,5 +1393,20 @@
     ],
     "result": "FACE",
     "flip_hash": "8397f495e73063a176f49839e19a6cd45b3559850c700292f0a8da76fcb0a48c034154f4b59ddbede92a5e07df4bff8d9930266828ca22c405db5e14312b1c74"
+  },
+  {
+    "session_id": "run-28373421309-attempt-1",
+    "timestamp": "2026-06-29T12:53:12.029835+00:00",
+    "words": [
+      "live",
+      "zeta",
+      "life",
+      "refraction",
+      "game",
+      "visual",
+      "powder"
+    ],
+    "result": "FACE",
+    "flip_hash": "146c0396122fed5040d41cedd9bfd356630a4ab2146bc495709bf5a68f0557edc6750ed7a0057c1eb67ad2ef4f6f658670933ee763e132e546fa16ec1ad036a4"
   }
 ]
