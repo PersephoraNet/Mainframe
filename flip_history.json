@@ -1408,5 +1408,20 @@
     ],
     "result": "FACE",
     "flip_hash": "146c0396122fed5040d41cedd9bfd356630a4ab2146bc495709bf5a68f0557edc6750ed7a0057c1eb67ad2ef4f6f658670933ee763e132e546fa16ec1ad036a4"
+  },
+  {
+    "session_id": "run-28441325688-attempt-1",
+    "timestamp": "2026-06-30T11:36:11.499996+00:00",
+    "words": [
+      "long",
+      "life",
+      "dispatch",
+      "epsylon",
+      "powder",
+      "target",
+      "essence"
+    ],
+    "result": "TAIL",
+    "flip_hash": "6bf3f522b7e34652df705813ebf9a939b446ef78e77cb1388039fc348bbe14a3db837bd0aa640e60a2e1b2938e101d43eee8336853d27626afe8cf0024026189"
   }
 ]
