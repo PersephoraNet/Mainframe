@@ -1438,5 +1438,20 @@
     ],
     "result": "FACE",
     "flip_hash": "06b18de55d7b16a8b94621a18fc60280b9264a1dd3771cd6743786013d1aa7201d3c1aef7206d33d06a9dc994b1e14b7b7653404e5ddfbc146ee69f6562bb66e"
+  },
+  {
+    "session_id": "run-28586266398-attempt-1",
+    "timestamp": "2026-07-02T11:23:37.824098+00:00",
+    "words": [
+      "game",
+      "powder",
+      "refraction",
+      "obvious",
+      "life",
+      "libra",
+      "live"
+    ],
+    "result": "FACE",
+    "flip_hash": "cf603ea2397413f1420170f20fc7a6fde3ccbc810d15baf86fcb3dfd148803a0510db9fcf243ba97e20c8127402490a89b58b4ff0c24a829bdd80f424db98c86"
   }
 ]
