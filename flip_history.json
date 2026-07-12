@@ -1588,5 +1588,20 @@
     ],
     "result": "FACE",
     "flip_hash": "65c4819efb647672fdc434aa63d450e2a7118a0cabd4a5162ff4b05e751811db37d25c714b34eacb6e5bc161450f4e91d6aba5707e48bfd98d09ee5b538f7b02"
+  },
+  {
+    "session_id": "run-29188844861-attempt-1",
+    "timestamp": "2026-07-12T10:16:01.599680+00:00",
+    "words": [
+      "refraction",
+      "instance",
+      "powder",
+      "corn",
+      "zeta",
+      "essence",
+      "visual"
+    ],
+    "result": "FACE",
+    "flip_hash": "77ef8ea3042d7b742018c24b736000e5d6d861b2a90b752472f3269e49f710813ab0c6fa8381163516c9e2aedc06f6dd9701e6d49bd780d28214edc620681b8c"
   }
 ]
