@@ -1798,5 +1798,20 @@
     ],
     "result": "FACE",
     "flip_hash": "8c1f1b4179b9555cebfa6c62680e6026b14dc97b46c093a4df0b0a2876677046a5c70e39012818d6d7a298eaae2ef7b892f3db7dd03d4c5b4971bc34f1f9e550"
+  },
+  {
+    "session_id": "run-30198213381-attempt-1",
+    "timestamp": "2026-07-26T10:24:47.155711+00:00",
+    "words": [
+      "dispatch",
+      "target",
+      "life",
+      "instance",
+      "game",
+      "refraction",
+      "live"
+    ],
+    "result": "FACE",
+    "flip_hash": "dbcb7d897ebcdf10028c654c856307635ada6ec6354e8eb6b75248194e9cbb656c767d8f7339ab025f87baeeeaa90901a901c8ec1461d69aaf4db2d83d7fd7fc"
   }
 ]
