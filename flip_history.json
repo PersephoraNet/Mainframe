@@ -2083,5 +2083,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "a823c9a9791af3675003a5b6a69e1bce6cdd7cf45d35f08cca5fcd30df1e79d8c98267347ee45a2a2c3faab3dac5d2f8053c2b61f378e0103755047dbdc9b0fb"
+  },
+  {
+    "session_id": "run-31789551224-attempt-1",
+    "timestamp": "2026-08-14T09:47:40.320200+00:00",
+    "words": [
+      "refraction",
+      "visual",
+      "obvious",
+      "epsylon",
+      "powder",
+      "dispatch",
+      "game"
+    ],
+    "result": "FACE",
+    "flip_hash": "67aa02605a6396fb3169cfc0dab8cec059ab490f98159aa7cb1bf5e827c8e71132a3ec7c7743bc8b95eacf4d3ca0ee9063dd12527743ff2e96d6dae570b6b21a"
   }
 ]
