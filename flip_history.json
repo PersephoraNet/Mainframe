@@ -2383,5 +2383,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "7bf248ce08008aa81ec6df31d156231f4f0cc2dc26606ec366625b6edf5aeb46fbfb5a3784927a991a7a83957d014772a3a857675cdb97defd650ae5b289cac7"
+  },
+  {
+    "session_id": "run-33875428336-attempt-1",
+    "timestamp": "2026-09-04T12:57:31.197890+00:00",
+    "words": [
+      "essence",
+      "target",
+      "powder",
+      "zeta",
+      "dispatch",
+      "live",
+      "long"
+    ],
+    "result": "TAIL",
+    "flip_hash": "cd7566d595356495d056d5c4de61931941f08fc96b4e30a8544acd57a6e5a6034338b298b25b16bbe89614c58650d00cbcedadafc42b5f255c9bc49cc02c7f6d"
   }
 ]
