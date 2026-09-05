@@ -2398,5 +2398,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "cd7566d595356495d056d5c4de61931941f08fc96b4e30a8544acd57a6e5a6034338b298b25b16bbe89614c58650d00cbcedadafc42b5f255c9bc49cc02c7f6d"
+  },
+  {
+    "session_id": "run-33965242902-attempt-1",
+    "timestamp": "2026-09-05T12:09:31.152847+00:00",
+    "words": [
+      "libra",
+      "dispatch",
+      "powder",
+      "instance",
+      "obvious",
+      "zeta",
+      "game"
+    ],
+    "result": "TAIL",
+    "flip_hash": "0e0e0ebd2065edf14da352267bb0f2d80d69cce994d2773dfd6de45fedcb8a99d8472d0f57573b5f4bd01b22b92e9f2a5d04b74f3d93047b907508a7a0d69ad3"
   }
 ]
