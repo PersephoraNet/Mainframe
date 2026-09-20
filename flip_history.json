@@ -2623,5 +2623,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "3f59418b31346d474a5c435bb7230b2fb8733328e24ccb390a7af643c07250caa395a3bc45eaf1265473498c73ccdb44d87021c76c92243e3e0b57ffe0273c01"
+  },
+  {
+    "session_id": "run-35512923196-attempt-1",
+    "timestamp": "2026-09-20T13:14:45.099976+00:00",
+    "words": [
+      "zeta",
+      "dispatch",
+      "game",
+      "target",
+      "refraction",
+      "life",
+      "essence"
+    ],
+    "result": "TAIL",
+    "flip_hash": "c1a04a5660026eb479a590d45053218f18512f5e5fd95b4ab9d008cf63e53ea8d36fd4cbfd143282c6a46841f606db0c485a1f8bfd7e98e1c590401960b4580f"
   }
 ]
