@@ -2653,5 +2653,20 @@
     ],
     "result": "FACE",
     "flip_hash": "bacb1b60e47bfedadf975d2d5cced384d2817fb285e70872cfdffaf9f1ec0180b0dc506ea93c0ecb12df0d1b97a6e9b3ae960cf5ae4a9b5c1acd16346403e636"
+  },
+  {
+    "session_id": "run-35735214738-attempt-1",
+    "timestamp": "2026-09-22T13:42:16.149276+00:00",
+    "words": [
+      "powder",
+      "life",
+      "corn",
+      "daemon",
+      "long",
+      "dispatch",
+      "obvious"
+    ],
+    "result": "TAIL",
+    "flip_hash": "abb80ff8b69bb7dfa33a19a8d806b6ba1f8bacefd8d5d23c5495ddad91ec7be955ee4af73bf70c9e86b3a36bfd3c2978090b65fe7a6bbf30a9d0757f83e4e205"
   }
 ]
