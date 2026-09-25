@@ -2698,5 +2698,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "253faba492fd0dcabacebfe567b820d24330f880537923b7255d02dd2e3f78eb0fdab30d15b25fa03631687e48c10a40f21f10b9407763700f832e66a1df5d51"
+  },
+  {
+    "session_id": "run-36145984234-attempt-1",
+    "timestamp": "2026-09-25T14:13:07.177240+00:00",
+    "words": [
+      "dispatch",
+      "live",
+      "obvious",
+      "game",
+      "corn",
+      "zeta",
+      "target"
+    ],
+    "result": "TAIL",
+    "flip_hash": "70911af95bd98e31fa7ecffcba9015634c94f0798f0240f86cc9bf9110f7b92a3c9ea29d9c19119bf68d179c73cc545ceb50215c3c1cc24c7ba0adcb1a4bf71d"
   }
 ]
