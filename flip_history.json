@@ -2713,5 +2713,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "70911af95bd98e31fa7ecffcba9015634c94f0798f0240f86cc9bf9110f7b92a3c9ea29d9c19119bf68d179c73cc545ceb50215c3c1cc24c7ba0adcb1a4bf71d"
+  },
+  {
+    "session_id": "run-36245077147-attempt-1",
+    "timestamp": "2026-09-26T13:24:53.181623+00:00",
+    "words": [
+      "powder",
+      "zeta",
+      "dispatch",
+      "long",
+      "target",
+      "game",
+      "instance"
+    ],
+    "result": "FACE",
+    "flip_hash": "4e1c598059eb74ad1d152973f90d4b4cd27c3e8b71dafe8f9409f10dab6f42cedb083af5921590ee3d110bab3af295fdc5ab355e98d9ab069aa5d4f9ad5b10ca"
   }
 ]
