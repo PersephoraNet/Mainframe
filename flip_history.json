@@ -2728,5 +2728,20 @@
     ],
     "result": "FACE",
     "flip_hash": "4e1c598059eb74ad1d152973f90d4b4cd27c3e8b71dafe8f9409f10dab6f42cedb083af5921590ee3d110bab3af295fdc5ab355e98d9ab069aa5d4f9ad5b10ca"
+  },
+  {
+    "session_id": "run-36325582718-attempt-1",
+    "timestamp": "2026-09-27T14:21:02.809553+00:00",
+    "words": [
+      "epsylon",
+      "refraction",
+      "corn",
+      "zeta",
+      "game",
+      "visual",
+      "obvious"
+    ],
+    "result": "FACE",
+    "flip_hash": "efc3ef5556db9bc1d450d2229114d6556120f725b4952a981532633a0312d8ab757b1245900066b982bb8fb5616c750d591d87c90c81ce59575f75294a38ae98"
   }
 ]
