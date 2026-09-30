@@ -2773,5 +2773,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "bfabf08e1dccf9013ccd718c9dcc9be2c29a33aa0ceaed51d7acef6391d2222ba6e6226fefd0eee6041c94f22eadb94779b71758af81b17dbee098eaa162291b"
+  },
+  {
+    "session_id": "run-36736497905-attempt-1",
+    "timestamp": "2026-09-30T15:24:42.232545+00:00",
+    "words": [
+      "live",
+      "epsylon",
+      "visual",
+      "game",
+      "zeta",
+      "obvious",
+      "life"
+    ],
+    "result": "FACE",
+    "flip_hash": "3365a08616a0bdd9b5b00303ca1f0449bac2595ca41512b1e50ff8fe473bf8f1061a7a5c23b4ee5ecc01404b913522d7a1e5d21158e33dde6e783d6e3231c9bc"
   }
 ]
