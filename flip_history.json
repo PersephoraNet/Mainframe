@@ -2788,5 +2788,20 @@
     ],
     "result": "FACE",
     "flip_hash": "3365a08616a0bdd9b5b00303ca1f0449bac2595ca41512b1e50ff8fe473bf8f1061a7a5c23b4ee5ecc01404b913522d7a1e5d21158e33dde6e783d6e3231c9bc"
+  },
+  {
+    "session_id": "run-36886690737-attempt-1",
+    "timestamp": "2026-10-01T15:45:09.782982+00:00",
+    "words": [
+      "essence",
+      "instance",
+      "live",
+      "game",
+      "visual",
+      "daemon",
+      "dispatch"
+    ],
+    "result": "TAIL",
+    "flip_hash": "6b73df9de6f3bfb020a2a311abf3d0f06b15794585cce7c7f866156b2602aceb3a4a06fba27059879d828f1ef24f8ab92011a643ca7c759c3d0c23285587e39f"
   }
 ]
