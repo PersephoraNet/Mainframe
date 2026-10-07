@@ -2878,5 +2878,20 @@
     ],
     "result": "FACE",
     "flip_hash": "7136bb06ad7a6dc23700516311997c09c8671b8608fb78cd555b4aa68410a68432f2119f70886af04d59f2d2440283a1ac4cfe1941b2f0c1e4e3e1879d9e8aec"
+  },
+  {
+    "session_id": "run-37647202962-attempt-1",
+    "timestamp": "2026-10-07T15:50:26.519862+00:00",
+    "words": [
+      "live",
+      "refraction",
+      "essence",
+      "dispatch",
+      "long",
+      "libra",
+      "instance"
+    ],
+    "result": "TAIL",
+    "flip_hash": "8ded89ada4ebdaa35e97c9538ddd0611cfb83124a7513ec28c5b032a1f72e812478586954f1d7c4ced8ce2d36f043a31a28e83cb8aeddd96b24ccf66877c6dd7"
   }
 ]
