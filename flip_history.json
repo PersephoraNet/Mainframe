@@ -2908,5 +2908,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "fb88a18acedfdd12bda95672847c0e98737fa7e9542c9d7742925d3f6e0dba5f05d255f939f2c7ea6f1d49880684cf007bd01ae9ae6c5cb1b31a1a2579989da5"
+  },
+  {
+    "session_id": "run-37952999267-attempt-1",
+    "timestamp": "2026-10-09T15:36:39.667243+00:00",
+    "words": [
+      "powder",
+      "libra",
+      "game",
+      "essence",
+      "epsylon",
+      "long",
+      "visual"
+    ],
+    "result": "FACE",
+    "flip_hash": "278797282f1cf0357870b2bc5fad7fa6f8e30c0a50d7bb2155797d5f4f02684624306fc53f607ff7dfc2cc7078d95ad115e77af41b5b8189e5e850bc75d0e4c6"
   }
 ]
