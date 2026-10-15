@@ -2998,5 +2998,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "195d3ec99fe9b43b2b26c737920b3cb9165a8ebedf7a5f9a3120c026ac77622cc1b834c1e8f5159beadacd66e27e6d28df8696516e0b1f61554c8908f7f982cd"
+  },
+  {
+    "session_id": "run-38745132052-attempt-1",
+    "timestamp": "2026-10-15T13:43:33.220834+00:00",
+    "words": [
+      "refraction",
+      "long",
+      "dispatch",
+      "corn",
+      "target",
+      "live",
+      "instance"
+    ],
+    "result": "FACE",
+    "flip_hash": "48e60a9de2036deb92215fddad9cd975e6e082342e3ac48a580e0a5d182866f7c630e7fb053410d79a881281e2828bba9cbe8bac127aa2f7bf07c613f9238ad8"
   }
 ]
