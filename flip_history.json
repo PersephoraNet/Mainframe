@@ -3013,5 +3013,20 @@
     ],
     "result": "FACE",
     "flip_hash": "48e60a9de2036deb92215fddad9cd975e6e082342e3ac48a580e0a5d182866f7c630e7fb053410d79a881281e2828bba9cbe8bac127aa2f7bf07c613f9238ad8"
+  },
+  {
+    "session_id": "run-38908838312-attempt-1",
+    "timestamp": "2026-10-16T13:34:09.527295+00:00",
+    "words": [
+      "live",
+      "long",
+      "refraction",
+      "game",
+      "zeta",
+      "corn",
+      "life"
+    ],
+    "result": "TAIL",
+    "flip_hash": "f25d64e55b955ec7ba8be55f6e165735ac519f01c61c67d660c5b3c5d0e247bc29cc880c8e31a0de54ccb47cc9c4c72c9c1a84fa8ba87b1571d3d5928aadb827"
   }
 ]
