@@ -3058,5 +3058,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "5ce285e075a1abbc7154ad52e0009725cd0152e859473c82aaabd80f66f960b876f4918fc2b1e0b07cb120caf6a8b899c5effda609f042348b9ea7d3ddb5f22f"
+  },
+  {
+    "session_id": "run-39281446853-attempt-1",
+    "timestamp": "2026-10-19T15:54:36.679934+00:00",
+    "words": [
+      "target",
+      "instance",
+      "game",
+      "long",
+      "live",
+      "corn",
+      "refraction"
+    ],
+    "result": "FACE",
+    "flip_hash": "5cddec672e518cf32778298e641854cb3fb34bdb2892c7265a1fb03be9d6f4e2668612e3bff90200018d260ab723668b158acca95e80486c4d4f934d56ea8e9c"
   }
 ]
