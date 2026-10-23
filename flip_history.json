@@ -3118,5 +3118,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "8b764ed888b1f4c6fc7f9c3247f71d9e905528d33617792493d4b1b12c524c927c4913fa9cab2c8b0f189fcc9daa10022fd6a60eef0b82daa6c582a18e05a9f9"
+  },
+  {
+    "session_id": "run-39964688386-attempt-1",
+    "timestamp": "2026-10-23T13:51:36.510579+00:00",
+    "words": [
+      "game",
+      "dispatch",
+      "epsylon",
+      "long",
+      "powder",
+      "zeta",
+      "refraction"
+    ],
+    "result": "TAIL",
+    "flip_hash": "600876723dd8cf168c59997a2dc7ed419366f91a634a0fdd65e359f4b6329970daedb2c930626a316e11a0fb9693d67e59c11d208f8a9843d11fe6031c0ac231"
   }
 ]
