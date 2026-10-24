@@ -3133,5 +3133,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "600876723dd8cf168c59997a2dc7ed419366f91a634a0fdd65e359f4b6329970daedb2c930626a316e11a0fb9693d67e59c11d208f8a9843d11fe6031c0ac231"
+  },
+  {
+    "session_id": "run-40096072346-attempt-1",
+    "timestamp": "2026-10-24T12:57:26.114935+00:00",
+    "words": [
+      "powder",
+      "epsylon",
+      "corn",
+      "visual",
+      "obvious",
+      "target",
+      "life"
+    ],
+    "result": "TAIL",
+    "flip_hash": "ae22af1d2e4f80f94cd9a16f899dd41a47929d5b9d8e23295426bdaccb4e4e61e8536134d38809b411528ead25d1f4668f6d4354430f6de7b2785b134f013909"
   }
 ]
