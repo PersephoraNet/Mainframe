@@ -3148,5 +3148,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "ae22af1d2e4f80f94cd9a16f899dd41a47929d5b9d8e23295426bdaccb4e4e61e8536134d38809b411528ead25d1f4668f6d4354430f6de7b2785b134f013909"
+  },
+  {
+    "session_id": "run-40197403084-attempt-1",
+    "timestamp": "2026-10-25T13:23:46.252265+00:00",
+    "words": [
+      "libra",
+      "obvious",
+      "instance",
+      "epsylon",
+      "refraction",
+      "game",
+      "corn"
+    ],
+    "result": "FACE",
+    "flip_hash": "bd9c996549fbc7694815eb19cce4ef8a0a4d42cf389751245bb60f1c1aa398dbbeac50a9351454ad80b5ff22b746ea45774cc654fe68083af2ae7c38839df0d2"
   }
 ]
