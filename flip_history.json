@@ -3193,5 +3193,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "6aa9c3fa383571f028ef356cbd8727ccca7d06f06b11bc76aafd6104dd0454fa692df5caadd631dc9d24a248e47a038f28a8ec009eec5372eff65ae1310f5de1"
+  },
+  {
+    "session_id": "run-40716904841-attempt-1",
+    "timestamp": "2026-10-28T15:32:04.276827+00:00",
+    "words": [
+      "live",
+      "instance",
+      "refraction",
+      "long",
+      "game",
+      "corn",
+      "libra"
+    ],
+    "result": "TAIL",
+    "flip_hash": "fccd10435ff2944b1c1aa46ac0499ca24078cf47e3ff7be22ea5717ac36ffebd997aa1e8cb861139e160fd46c1e0cedf22961f6a2016a330d457ec5a657e7b43"
   }
 ]
