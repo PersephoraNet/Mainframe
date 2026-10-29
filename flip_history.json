@@ -3208,5 +3208,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "fccd10435ff2944b1c1aa46ac0499ca24078cf47e3ff7be22ea5717ac36ffebd997aa1e8cb861139e160fd46c1e0cedf22961f6a2016a330d457ec5a657e7b43"
+  },
+  {
+    "session_id": "run-40903831788-attempt-1",
+    "timestamp": "2026-10-29T15:39:53.892629+00:00",
+    "words": [
+      "instance",
+      "visual",
+      "long",
+      "target",
+      "powder",
+      "refraction",
+      "obvious"
+    ],
+    "result": "FACE",
+    "flip_hash": "6c1bd3013b3e54b4c139ca5b6c967db029eddbb24cce49f259e468d980feef05c261115568a3a22fbca6ec1067dfaf7a0243727c15ded9b324ddd77c4b0be536"
   }
 ]
