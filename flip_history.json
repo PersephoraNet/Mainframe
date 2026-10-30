@@ -3223,5 +3223,20 @@
     ],
     "result": "FACE",
     "flip_hash": "6c1bd3013b3e54b4c139ca5b6c967db029eddbb24cce49f259e468d980feef05c261115568a3a22fbca6ec1067dfaf7a0243727c15ded9b324ddd77c4b0be536"
+  },
+  {
+    "session_id": "run-41080110769-attempt-1",
+    "timestamp": "2026-10-30T15:22:35.640630+00:00",
+    "words": [
+      "zeta",
+      "daemon",
+      "long",
+      "game",
+      "powder",
+      "dispatch",
+      "obvious"
+    ],
+    "result": "TAIL",
+    "flip_hash": "fa09296599395003a09992963eb97d938661501cbcfac4a3bc653c50e1e0ef73acef1c2cbb3a7e177bb13556afd3d386e3a309107a3f7cc9a83c933370b7d3ef"
   }
 ]
