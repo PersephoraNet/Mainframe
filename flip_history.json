@@ -3238,5 +3238,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "fa09296599395003a09992963eb97d938661501cbcfac4a3bc653c50e1e0ef73acef1c2cbb3a7e177bb13556afd3d386e3a309107a3f7cc9a83c933370b7d3ef"
+  },
+  {
+    "session_id": "run-41212066441-attempt-1",
+    "timestamp": "2026-10-31T14:51:31.640628+00:00",
+    "words": [
+      "target",
+      "powder",
+      "visual",
+      "game",
+      "instance",
+      "long",
+      "essence"
+    ],
+    "result": "FACE",
+    "flip_hash": "59c9f81f735476906948b21d83335ef2fa12b14737e3c2644a8823eef045b365282552bab2abd2773d8b151c642bd351c84474ee76c0d176c3820bd2b1f9a056"
   }
 ]
