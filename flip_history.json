@@ -3253,5 +3253,20 @@
     ],
     "result": "FACE",
     "flip_hash": "59c9f81f735476906948b21d83335ef2fa12b14737e3c2644a8823eef045b365282552bab2abd2773d8b151c642bd351c84474ee76c0d176c3820bd2b1f9a056"
+  },
+  {
+    "session_id": "run-41321537102-attempt-1",
+    "timestamp": "2026-11-01T15:30:17.354162+00:00",
+    "words": [
+      "essence",
+      "live",
+      "zeta",
+      "daemon",
+      "long",
+      "life",
+      "instance"
+    ],
+    "result": "TAIL",
+    "flip_hash": "add5588f7b81baa88ff06b75d7a9ecf5b2ac717fc08e386c6047f12be32a80f76add412dd5ea901e018d00e14ae31046b3bab53891aa9927ff6b1ac8bd62c1fd"
   }
 ]
