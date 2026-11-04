@@ -3298,5 +3298,20 @@
     ],
     "result": "FACE",
     "flip_hash": "6922286baed7cce2ea0d72b9ac402e65644b9a0c96ae1bee7d040a8d6a88fdad57e9002821a09b186bacd5114b8c65cb9fa05c81f857ffbc3af910b1af19f344"
+  },
+  {
+    "session_id": "run-41869256675-attempt-1",
+    "timestamp": "2026-11-04T16:38:01.041112+00:00",
+    "words": [
+      "long",
+      "obvious",
+      "powder",
+      "instance",
+      "life",
+      "game",
+      "live"
+    ],
+    "result": "TAIL",
+    "flip_hash": "771151bb78962f994d99c1d9214703f931290b77c81e2ac21b593b37c181440db8bcd27ea25ef1915bdd19f032b158b24ba9d8c8ee2a9f5124b5714c1b0c4311"
   }
 ]
