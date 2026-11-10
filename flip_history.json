@@ -3388,5 +3388,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "0ce36b4856586674a4e032e005f8ba2960ea424112db790f677193e356c09947ca1bcbcd4a37a1d95e5c19dc936db232aa8bf38436cf279ff41637f641b74675"
+  },
+  {
+    "session_id": "run-42856443373-attempt-1",
+    "timestamp": "2026-11-10T16:37:57.045141+00:00",
+    "words": [
+      "long",
+      "dispatch",
+      "epsylon",
+      "live",
+      "visual",
+      "refraction",
+      "game"
+    ],
+    "result": "TAIL",
+    "flip_hash": "d38f4c8564af7ec4461d67d6a40c1b39493c58d248a31374f6f91cfeb04fd1884899254df60a87c4e2d720679785bce4d8cf1ffdfa9804a97197dfed1f4be125"
   }
 ]
