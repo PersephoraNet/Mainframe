@@ -3433,5 +3433,20 @@
     ],
     "result": "FACE",
     "flip_hash": "99429f558c17cb7f615afb311ec8ed5cfeb7e94743e77383d5875a6b3d2f6de709e3d1de13098313e0c37d4eef734e11e485742a615e61aac96e68572dbe287a"
+  },
+  {
+    "session_id": "run-43466343902-attempt-1",
+    "timestamp": "2026-11-13T16:48:07.481677+00:00",
+    "words": [
+      "epsylon",
+      "zeta",
+      "life",
+      "refraction",
+      "instance",
+      "target",
+      "live"
+    ],
+    "result": "TAIL",
+    "flip_hash": "cd4ce4bbd35bfde28cc23d087ffa5a5b12ee3b7bba415e7eefc0f26c7abdcfc8fd5540207e7e1c6c0649b73196686d629023d528aa2bb9a630d3f4a3fc8b14a7"
   }
 ]
