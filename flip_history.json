@@ -3478,5 +3478,20 @@
     ],
     "result": "FACE",
     "flip_hash": "0c87298537976be178970f5ea2b4de0fb6829346062f62b684cbe9fcc74b33dbd45dfe00c31ca01fe28f14191a02b8240cf446fb7ae6368ca6200cdaecd020aa"
+  },
+  {
+    "session_id": "run-43934341451-attempt-1",
+    "timestamp": "2026-11-16T18:58:06.488306+00:00",
+    "words": [
+      "refraction",
+      "target",
+      "powder",
+      "essence",
+      "long",
+      "epsylon",
+      "live"
+    ],
+    "result": "FACE",
+    "flip_hash": "1a2ac7150ce5bd083c7359eed5252d08f672850ba1e470d1b9879af764f277ce0c8d5d4313b4a3e268d6b0573d8358ac77628218630b15f5c0ca6aa495c4de5a"
   }
 ]
