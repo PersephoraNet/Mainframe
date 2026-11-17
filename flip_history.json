@@ -3493,5 +3493,20 @@
     ],
     "result": "FACE",
     "flip_hash": "1a2ac7150ce5bd083c7359eed5252d08f672850ba1e470d1b9879af764f277ce0c8d5d4313b4a3e268d6b0573d8358ac77628218630b15f5c0ca6aa495c4de5a"
+  },
+  {
+    "session_id": "run-44142351077-attempt-1",
+    "timestamp": "2026-11-17T17:56:02.973262+00:00",
+    "words": [
+      "instance",
+      "corn",
+      "daemon",
+      "powder",
+      "game",
+      "obvious",
+      "essence"
+    ],
+    "result": "FACE",
+    "flip_hash": "d4693a013090cee3461bd08e9addc197c5b3258a84c2433dae2e6899d16a83a0159724251ca30167271b61951d24ca5203a64944631323585fcb3041820ba42a"
   }
 ]
