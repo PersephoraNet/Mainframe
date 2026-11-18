@@ -3508,5 +3508,20 @@
     ],
     "result": "FACE",
     "flip_hash": "d4693a013090cee3461bd08e9addc197c5b3258a84c2433dae2e6899d16a83a0159724251ca30167271b61951d24ca5203a64944631323585fcb3041820ba42a"
+  },
+  {
+    "session_id": "run-44360782145-attempt-1",
+    "timestamp": "2026-11-18T17:37:54.404504+00:00",
+    "words": [
+      "corn",
+      "long",
+      "live",
+      "life",
+      "instance",
+      "libra",
+      "game"
+    ],
+    "result": "FACE",
+    "flip_hash": "062829d009633eef096a3e2e6e4a5c85800951b09bf8db97cbaf982a82fa8f981bb27a464fd28aad2fc97fc5f24638f878997c8632b9dc677fe7528902ac5f5c"
   }
 ]
