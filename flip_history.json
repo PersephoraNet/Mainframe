@@ -3568,5 +3568,20 @@
     ],
     "result": "FACE",
     "flip_hash": "2097886422656d0accfae52758e7a61b035d67d35e5307c4b2a33eac9b41c51be1cfef36cf41b875f254cf00da67e0622c56903bdd80ef638917a59864526ebe"
+  },
+  {
+    "session_id": "run-45045419781-attempt-1",
+    "timestamp": "2026-11-22T16:43:34.630292+00:00",
+    "words": [
+      "target",
+      "live",
+      "obvious",
+      "dispatch",
+      "visual",
+      "instance",
+      "essence"
+    ],
+    "result": "TAIL",
+    "flip_hash": "61b57ae50182b5bacc6496fa3918a26fe87774b52baae0932a56498a1d1824a9f4138ef6bfe51c8e92e38210b65d45dff2199df5fc6efbe53fecd5e47ee03fe7"
   }
 ]
