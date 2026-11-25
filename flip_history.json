@@ -3613,5 +3613,20 @@
     ],
     "result": "TAIL",
     "flip_hash": "b8a0f882917729e78a13efc9880ac5310703719277b6c169edc6f23267fbba5cb1279406f99884b10623aa20f2426ab42e58775eeacd9812c2b68816ba1a5a65"
+  },
+  {
+    "session_id": "run-45679406544-attempt-1",
+    "timestamp": "2026-11-25T18:51:46.162372+00:00",
+    "words": [
+      "long",
+      "powder",
+      "epsylon",
+      "zeta",
+      "dispatch",
+      "refraction",
+      "obvious"
+    ],
+    "result": "TAIL",
+    "flip_hash": "031fb6303bd64b7382befd96487593ca3c80846fb06138a9b23957bc600cc4dffe320c0b7d976a83808a84e1eaa2a265e160e44bed27c2d64eddfe7811e57079"
   }
 ]
